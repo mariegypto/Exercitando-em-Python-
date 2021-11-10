@@ -1,2 +1,4 @@
+//Crie um programa em Python que leia o salário de um funcionário informado pelo usuário e posteriormente mostre-o na tela //
+
 salario=float(input("Informe o salário: R$ ")) 
 print("O salário informado foi:", salario) 
