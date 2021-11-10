@@ -1,0 +1,5 @@
+//Crie um programa em Python que leia o salário de um funcionário informado pelo usuário e posteriormente some 10000 a esse salário. Mostre o salário final na tela.//
+
+salario=float(input("Informe o salário: R$ ")) 
+salario=salario+10000 
+print("O salário informado foi:", salario) 
