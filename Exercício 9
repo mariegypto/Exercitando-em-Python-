@@ -1,0 +1,14 @@
+#Escreva um algoritmo que leia o código e o salário de 100 funcionários de uma empresa. 
+#Ao final, o algoritmo deve determinar o total da folha de pagamento da empresa e sua média salarial. 
+
+total = 0 
+
+for(salario) in range (100):
+
+    salario=float(input("Informe o salário: R$ ")) 
+
+    total=total+salario 
+
+print("O Total da folha de pagamento é de:",total) 
+
+print("A média da folha de pagamento é de:",total/100) 
