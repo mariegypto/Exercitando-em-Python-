@@ -1,0 +1,57 @@
+#Faça um algoritmo que leia o nome, a idade e o sexo (‘M’ para masculino e ‘F’ para feminino) de um grupo de 200 estudantes e determine: 
+
+#a) quantos são do sexo feminino e maior de 21 anos;  
+#b) quantos são do sexo masculino e maio de 18 anos  
+#c) qual a média de idade de pessoas do sexo masculino;  
+#d) qual a média de idade de pessoas do sexo feminino; 
+ 
+
+masculino=0 
+
+feminino=0 
+
+idade_m=0 
+
+idade_f=0 
+
+media_m=0 
+
+media_f=0 
+
+estudantes=0 
+
+ 
+
+for estudantes in range (200): 
+
+  nome=input("Informe o seu nome: ") 
+
+  idade=int(input("Informe a sua idade: ")) 
+
+  sexo=input("Informe o seu sexo: ") 
+
+  if (sexo=="M") and (idade>=18): 
+
+    masculino=masculino+1 
+
+    idade_m=idade_m+idade 
+
+    media_m=idade_m/masculino 
+
+  elif (sexo=="F") and (idade>=21): 
+
+    feminino=feminino+1 
+
+    idade_f=idade_f+idade 
+
+    media_f=idade_f/feminino 
+
+ 
+
+print("Há",masculino," alunos do sexo masculino e maiores de 18 anos.") 
+
+print("A média de idade dos alunos do sexo masculino é:",media_m,".") 
+
+print("Há",feminino," alunas do sexo feminino e maiores de 21 anos.") 
+
+print("A média de idade das alunas do sexo feminino é:",media_f,".") 
