@@ -1,0 +1,19 @@
+#As maçãs custam R$ 1,30 cada se forem compradas menos de uma dúzia, e R$ 1,00 se forem compradas pelo menos 12. 
+#Escreva um programa em Python que leia o número de maçãs compradas, calcule e escreva o custo total da compra. 
+
+qtdd=int(input("Quantidade de maçãs:")) 
+
+valor=float 
+
+if (qtdd < 12) : 
+
+    valor=1.30 
+
+else : 
+
+    valor=1.00 
+
+
+total= valor*qtdd 
+
+print("Custo total da compra foi de: R$",total) 
