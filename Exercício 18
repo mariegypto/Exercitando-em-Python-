@@ -1,0 +1,13 @@
+#Implementar um algoritmo que leia um conjunto de 50 elementos inteiros e os imprima em ordem contrária da que foi lida. 
+
+conj = [] 
+indice = 0 
+
+
+for indice in range(5): 
+
+    conj.append(int(input("Informe um número: "))) 
+
+for indice in reversed(conj): 
+
+    print(indice) 
