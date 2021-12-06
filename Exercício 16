@@ -1,0 +1,90 @@
+#Para realizar a totalização dos votos de uma eleição para um cargo majoritário com 3 candidatos (Antonio, Pedro e José), 
+#leia os votos da 10 seções que compõem o colégio eleitoras. Para cada seção, são informados: o número de votos de cada candidato, 
+#o número de votos brancos e o número de votos nulos. A partir dessas informações determine:  
+
+#a. o número de votantes; 
+#b. o total de voto de cada candidato; 
+#c. o total de votos brancos e nulos; 
+#d. o total de votos válidos; 
+#e. O candidato com maior votação; 
+#f. Se a eleição for válida. Para isso, o total de votos brancos mais votos nulos deve ser menor que o total de votos válidos. 
+
+
+antonio=0 
+pedro=0 
+jose=0 
+branco=0 
+nulo=0 
+votos_validos=int 
+
+ 
+for secao in range(1,11): 
+
+    voto=int(input("\n Vote 1 para Antonio \n Vote 2 para Pedro \n Vote 3 para José \n Vote 0 para Branco \n Vote -1 para Nulo \n Insira seu voto:")) 
+
+    if voto == 1 : 
+
+        print("Parabéns cidadão, você votou no candidato Antonio!") 
+
+        antonio+=1 
+
+    elif voto == 2 : 
+
+        print("Parabéns cidadão, você votou no candidato Pedro!") 
+
+        pedro+=1 
+
+    elif voto == 3 : 
+
+        print("Parabéns cidadão, você votou no candidato José!") 
+
+        jose+=1 
+
+    elif voto == 0 : 
+
+        print("Parabéns cidadão, você votou em branco!") 
+
+        branco+=1 
+
+    elif voto == -1 : 
+
+        print("Parabéns cidadão, você votou nulo!") 
+
+        nulo+=1 
+
+    else : 
+
+        print("Voto inválido") 
+
+     
+
+    votos_validos=antonio+pedro+jose 
+
+    brancos_nulos=branco+nulo  
+
+ 
+
+    print("\n Seção ",secao,"contou com: \n",antonio,"votos para Antonio \n",pedro,"votos para Pedro \n", jose,"votos para José \n",branco,"votos Brancos \n",nulo,"votos Nulos \n Total de votos válidos: ",votos_validos, "Total de votos brancos e nulos: ", brancos_nulos) 
+
+ 
+
+if votos_validos > brancos_nulos:  
+
+ if antonio > pedro & antonio > jose: 
+
+     print("Antonio venceu a eleição") 
+
+ elif pedro > jose & pedro > antonio: 
+
+     print("Pedro venceu a eleição") 
+
+ elif jose > antonio & jose > pedro: 
+
+     print("José venceu a eleição") 
+
+else: 
+
+    print("Eleição inválida") 
+
+ 
+ 
