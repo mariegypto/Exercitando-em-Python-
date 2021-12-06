@@ -1,0 +1,70 @@
+#Escrever um algoritmo que leia o código do item pedido, a quantidade e calcule o valor a ser pago por aquele lanche. 
+#Considere que a cada execução somente será calculado um item. O programa irá ler os pedidos enquanto o código do produto não for 999. 
+#Quando o cliente informar 999, o algoritmo deve informar a quantidade de pedidos realizada e o valor total arrecadado. 
+
+codigo=int(input("Informe o código:")) 
+
+valor=float 
+valor_pedido=0 
+total_pedidos=0 
+valor_arrecadado=0 
+
+ 
+ while codigo != 999: 
+
+    quantidade=int(input("Informe a quantidade: "))  
+
+    if codigo == 100: 
+
+        valor = 1.20 
+
+        print("Cachorro-quente") 
+
+    elif codigo == 101: 
+
+        valor = 1.30 
+
+        print("Bauru simples") 
+
+    elif codigo == 102: 
+
+        valor = 1.50 
+
+        print("Bauru com ovo") 
+
+    elif codigo == 103: 
+
+        valor = 1.30 
+
+        print("Hambúrguer") 
+
+    elif codigo == 104: 
+
+        valor = 1.30 
+
+        print("Cheeseburguer") 
+
+    elif codigo == 105: 
+
+        valor = 1.00 
+
+        print("Refrigerante") 
+
+    else: 
+
+        print("Código inválido") 
+
+
+    valor_pedido = valor * quantidade 
+
+    total_pedidos += 1 
+
+    valor_arrecadado += valor_pedido 
+
+    print("Valor do pedido: R$ ",valor_pedido) 
+
+    codigo=int(input("Informe o código: ")) 
+
+    print("Total de pedidos: ",total_pedidos) 
+
+ print("Valor arrecadado: R$ ",valor_arrecadado) 
