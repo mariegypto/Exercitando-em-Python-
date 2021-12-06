@@ -1,0 +1,14 @@
+#Faça um algoritmo para ler uma matriz 3x4 de números reais, e depois exibir o elemento do canto superior esquerdo e do canto inferior direito; 
+
+mat = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
+
+for linha in range (0,3):
+  for coluna in range (0,4):
+    mat[linha][coluna] = int(input("Digite um valor:"))
+for linha in range (0, 3):
+  for coluna in range (0, 4):
+  print(mat[linha][coluna])
+  print()
+
+print("Superior esquerdo: ", mat[0][0])
+print("Inferior direito: ", mat[2][3])
