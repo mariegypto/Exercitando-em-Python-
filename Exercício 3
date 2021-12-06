@@ -1,0 +1,7 @@
+#Crie um programa em Python que leia a idade e o nome de um aluno e posteriormente mostre essa idade na tela. 
+
+idade=float(input("Informe a idade: ")) 
+
+nome=(input("Informe o nome: ")) 
+
+print("A idade informada foi: ", idade) 
