@@ -1,0 +1,25 @@
+#A empresa Pregotex possui 100 funcionários que recebem 13 salários por ano. O salário do funcionário pode variar mês a mês. 
+#Faça um algoritmo que leia os 13 salários dos 100 funcionários e mostre na tela: – O salário anual de cada funcionário; – O valor da folha de pagamento anual. 
+
+salario_anual=0 
+
+folha_pagamento=0 
+
+funcionarios=100 
+ 
+
+for funcionarios in range (2):
+
+    for salario in range(13): 
+        salario=float(input("Informe o salário: ")) 
+        salario_anual+=salario
+
+    print("Salário anual do funcionário: R$",salario_anual)     
+
+    folha_pagamento+=salario_anual 
+
+    salario_anual=0 
+
+ 
+
+print("Folha de pagamento anual da empresa: R$", folha_pagamento) 
