@@ -1,0 +1,25 @@
+#Uma máquina comprada por R$ 28.000,00 se deprecia com uma taxa de R$ 4.000,00 por ano em sete anos. 
+#Escreva um algoritmo que calcula e mostre a tabela de depreciação para esses sete anos. A tabela deve ter a forma abaixo. 
+
+valor=28000 
+
+taxa=4000 
+
+depreciacao_total=0 
+
+ano=0 
+
+
+for cont in range(7): 
+
+    valor = valor - taxa 
+
+    ano += 1 
+
+    print("Valor no final do",ano,"ano:  R$", valor) 
+
+    print("Valor da taxa de depreciação: R$", taxa) 
+
+    depreciacao_total=depreciacao_total+taxa 
+
+    print("Taxa acumulada até então:", depreciacao_total) 
