@@ -8,7 +8,7 @@ folha_pagamento=0
 funcionarios=100 
  
 
-for funcionarios in range (2):
+for funcionarios in range (100):
 
     for salario in range(13): 
         salario=float(input("Informe o salário: ")) 
