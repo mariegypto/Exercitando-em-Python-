@@ -1,0 +1,39 @@
+#Criar um algoritmo para ler o nome e a idade de um grupo de pessoas, sendo o número desse grupo determinado pelo cliente. 
+#Ao final, o programa deverá imprimir o nome e a idade da pessoa mais idosa e o nome e a idade da pessoa mais jovem. 
+
+qtdd=int(input("Insira a quantidade de pessoas:")) 
+
+maior_nome="" 
+
+menor_nome="" 
+
+maior_idade=0 
+
+menor_idade=200 
+
+cont=0  
+
+for (cont) in range(qtdd):  
+
+    nome=input("Insira o seu nome:")  
+
+    idade=int(input("Insira a sua idade:")) 
+
+    if idade>maior_idade: 
+
+        maior_idade=idade 
+
+        maior_nome=nome 
+
+    if idade<menor_idade: 
+
+        menor_idade=idade 
+
+        menor_nome=nome 
+
+print("Pessoa mais velha: \n Nome:", maior_nome,"Idade:", maior_idade) 
+
+print("Pessoa mais jovem: \n Nome:", menor_nome,"Idade:", menor_idade) 
+  
+
+print("Fim")
